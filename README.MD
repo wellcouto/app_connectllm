@@ -89,7 +89,7 @@ python src/main.py hf "Qual é a capital da França?" --context "A França está
 |----------------|----------|-------------|-------------------------------------------------------------------|
 | `model_choice` | string   | ✅          | `'chatgpt'` ou `'hf'` (Hugging Face)                              |
 | `question`     | string   | ✅          | A pergunta a ser feita ao modelo                                  |
-| `context`    | string   | ❌          | Um texto base para perguntas no estilo Q&A (RoBERTa)              |
+| `context`      | string   | ✅          | Um texto base para perguntas no estilo Q&A (RoBERTa)              |
 
 ---
 
