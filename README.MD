@@ -3,6 +3,8 @@
 
 Este projeto é uma aplicação Python que se conecta com dois Large Language Models (LLMs): ChatGPT (via API da OpenAI) e RoBERTa (via Hugging Face), utilizando padrões de projeto para estruturação robusta e extensível.
 
+Demo de Uso: https://youtu.be/Mob6fL4AWh8
+
 ## 📦 Funcionalidades
 
 - Perguntas via linha de comando a um ou ambos os modelos.
