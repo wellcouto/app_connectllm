@@ -89,8 +89,7 @@ python src/main.py hf "Qual é a capital da França?" --context "A França está
 |----------------|----------|-------------|-------------------------------------------------------------------|
 | `model_choice` | string   | ✅          | `'chatgpt'` ou `'hf'` (Hugging Face)                              |
 | `question`     | string   | ✅          | A pergunta a ser feita ao modelo                                  |
-| `--context`    | string   | ❌          | Um texto base para perguntas no estilo Q&A (RoBERTa)              |
-| `--compare`    | flag     | ❌          | Se definido, consulta ambos os modelos e compara as respostas     |
+| `context`    | string   | ❌          | Um texto base para perguntas no estilo Q&A (RoBERTa)              |
 
 ---
 
@@ -118,16 +117,6 @@ python src/main.py hf "Qual é a capital da França?" --context "A França está
 
 ---
 
-## 🧪 Testes
-
-Crie testes unitários na pasta `tests/`, como:
-
-- Teste de integração do comando `AskCommand`.
-- Teste unitário da `EmbeddingSimilarityStrategy`.
-- Teste de chamadas simuladas para ChatGPT e Hugging Face.
-
----
-
 ## 💡 Demonstração
 
 Grave um vídeo mostrando:
@@ -135,7 +124,6 @@ Grave um vídeo mostrando:
 1. Instalação do ambiente
 2. Execução de exemplos com CLI
 3. Explicação da arquitetura e dos padrões
-4. Comparação de respostas com `--compare`
 
 ---
 
@@ -164,7 +152,7 @@ src/
 ## 🧊 Exemplo de Execução
 
 ```bash
-python src/main.py hf "Qual é a capital da França?" --context "A França é um país europeu. Sua capital é Paris." --compare
+python src/main.py hf "Qual é a capital da França?" "A França é um país europeu. Sua capital é Paris." 
 ```
 
 Saída esperada:

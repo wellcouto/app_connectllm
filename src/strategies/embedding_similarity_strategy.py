@@ -19,7 +19,7 @@ class EmbeddingSimilarityStrategy(BaseStrategy):
         # Gera embedding para a pergunta
         question_embedding = self.model.encode(self.user_question, convert_to_tensor=True)
         
-        best_response = None
+        best = None
         best_score = float("-inf")
 
         # Para cada resposta, calcula embedding e similaridade
